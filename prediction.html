@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-    <h1>Prediction for {{ ticker }}</h1>
-    <p>Predicted Trend: {{ prediction.trend }}</p>
-    <p>Next 5 Days Prediction: {{ prediction.predictions }}</p>
-    <div id="chart"></div> <!-- Placeholder for chart -->
-    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>
-{% endblock %}
